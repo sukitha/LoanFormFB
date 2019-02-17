@@ -1,0 +1,289 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Loan Application</title>
+	<link rel="stylesheet" type="text/css" href="view.css" media="all">
+	<script type="text/javascript" src="view.js"></script>
+	<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+	<script>
+        liff.init(
+            data => {
+                // Now you can call LIFF API
+                const userId = data.context.userId;
+            },
+            err => {
+                // LIFF initialization failed
+            }
+        );
+        loadSite = function () {
+
+
+            liff.openWindow({
+                url: 'https://www.google.com',
+                external: true
+            });
+        };
+
+        sendFormData = function () {
+
+
+
+            liff.sendMessages([{
+                type: 'text',
+                text: 'Hello, World!'
+            }])
+                .then(() => {
+                    alert('message sent');
+                })
+                .catch((err) => {
+                    alert(err);
+                });
+
+
+            //liff.closeWindow();
+        }
+	</script>
+</head>
+
+<body id="main_body">
+
+<img id="top" src="top.png" alt="">
+<div id="form_container">
+
+
+	<form id="form_49833" class="appnitro" method="get" action="/test.php" onSubmit="sendFormData()">
+		<div class="form_description seperator_styl">
+			<center style="
+				font-size: 70px;">
+				<h2>Loan Application</h2>
+
+			</center>
+		</div>
+
+		<div class="div_box">
+			<h4>Personal Info</h4>
+			<ul>
+
+
+				<li id="li_1">
+					<label class="description" for="element_1">Name </label>
+					<span>
+			<input id="element_1_1" name= "element_1_1" class="element text" maxlength="255" size="8" value=""/>
+			<label class="lbl_text">First</label>
+		</span>
+					<span>
+			<input id="element_1_2" name= "element_1_2" class="element text" maxlength="255" size="14" value=""/>
+			<label class="lbl_text">Last</label>
+		</span>
+				</li>
+				<li id="li_2">
+					<label class="description" for="element_2">Phone </label>
+					<span>
+			<input id="element_2_1" name="element_2_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+			<label for="element_2_1" class="lbl_text">(###)</label>
+		</span>
+					<span>
+			<input id="element_2_2" name="element_2_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+			<label for="element_2_2" class="lbl_text">###</label>
+		</span>
+					<span>
+	 		<input id="element_2_3" name="element_2_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_2_3" class="lbl_text">####</label>
+		</span>
+
+				</li>
+				<li id="li_3">
+					<label class="description" for="element_3">Email </label>
+					<div>
+						<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value="" />
+					</div>
+				</li>
+				<li id="li_5">
+					<label class="description" for="element_5">Annual Income </label>
+					<span class="lbl_text">$</span>
+					<span>
+			<input id="element_5_1" name="element_5_1" class="element text currency" size="10" value="" type="text" /> .
+			<label for="element_5_1 " class="lbl_text">Dollars</label>
+		</span>
+					<span>
+			<input id="element_5_2" name="element_5_2" class="element text" size="2" maxlength="2" value="" type="text" />
+			<label for="element_5_2 " class="lbl_text">Cents</label>
+		</span>
+
+				</li>
+
+			</ul>
+		</div>
+		<ul>
+			<li id="li_4">
+				<label class="description" for="element_4">Desired Amount </label>
+				<span class="lbl_text">$</span>
+				<span>
+			<input id="element_4_1" name="element_4_1" class="element text currency" size="10" value="" type="text" /> .
+			<label for="element_4_1" class="lbl_text">Dollars</label>
+		</span>
+				<span>
+			<input id="element_4_2" name="element_4_2" class="element text" size="2" maxlength="2" value="" type="text" />
+			<label for="element_4_2" class="lbl_text">Cents</label>
+		</span>
+
+			</li>
+			<li id="li_6">
+				<label class="description" for="element_6">No of Years </label>
+				<div>
+					<select class="" style="width:500px;height:100px;font-size:45px" id="element_6" name="element_6">
+						<option value="" selected="selected"></option>
+						<option value="1" >1</option>
+						<option value="2" >2</option>
+						<option value="3" >3</option>
+						<option value="4" >4</option>
+						<option value="5" >5</option>
+						<option value="6" >6</option>
+						<option value="7" >7</option>
+
+
+					</select>
+				</div>
+			</li>
+
+		</ul>
+	</form>
+	<button type="submit" form="form_49833" value="Submit">Submit</button>
+
+</div>
+<img id="bottom" src="bottom.png" alt="">
+</body>
+
+
+
+
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Loan Application</title>
+    <link rel="stylesheet" type="text/css" href="view.css" media="all">
+
+</head>
+<body id="main_body">
+<script src="fbsdk.js"></script>
+
+
+<img id="top" src="top.png" alt="">
+<div id="form_container">
+    <form action="" method="post" id="nameform">
+        <div class="form_description seperator_styl">
+            <center style="
+				font-size: 70px;">
+                <h2>Loan Application</h2>
+
+            </center>
+        </div>
+
+        <div >
+
+            <ul>
+
+
+                <li id="li_1">
+                    <label class="description" for="element_1">Full Name </label>
+                    <div>
+                        <input id="element_1_1" name="element_1_1" class="input-warp" type="text" maxlength="255" value="" />
+                    </div>
+
+                </li>
+                <li id="li_2">
+                    <label class="description" for="element_2">Phone </label>
+                    <span>
+			<input id="element_2_1" name="element_2_1" class="input-warp" size="5" maxlength="5" value="+65" type="text" >
+                    </span>
+                    <span>
+    <input id="element_xx" name="element_xx" class="input-warp" type="text" maxlength="9" value="" />
+                    </span>
+
+
+
+                </li>
+                <li id="li_3">
+                    <label class="description" for="element_3">Email </label>
+                    <div>
+                        <input id="element_3" name="element_3" class="input-warp" type="text" maxlength="255" value="" />
+                    </div>
+                </li>
+                <li id="li_5">
+                    <label class="description" for="element_5">Annual Income </label>
+
+                    <span>
+			<input id="slider_annual" type="range" min="1" max="10000" value="0" class="range-wrap">
+			<label id="output_annual" class="lbl_text" value=""></label>$
+		</span>
+
+                </li>
+
+            </ul>
+        </div>
+        <ul>
+            <li id="li_4">
+                <label class="description" for="element_4">Desired Amount </label>
+                <span>
+			<input id="slider_loan" type="range" min="1" max="100000" value="0" class="range-wrap">
+			<label id="output_loan" class="lbl_text" value=""></label>$
+		</span>
+
+
+            </li>
+            <li id="li_6">
+                <label class="description" for="element_6">No of Years </label>
+                <div>
+                    <select class="input-warp" style="" id="element_6" name="element_6">
+                        <option value="" selected="selected"></option>
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                        <option value="4" >4</option>
+                        <option value="5" >5</option>
+                        <option value="6" >6</option>
+                        <option value="7" >7</option>
+
+
+                    </select>
+                </div>
+            </li>
+
+            <li>
+
+            </li>
+        </ul>
+
+    </form>
+
+    <div>
+       <center>
+           <button id="sendmessagebutton" class="btn-wrap" style="background-color: #dc1e25;
+    border: medium none;
+    border-radius: 30px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 15px auto 0;
+    padding: 10px 30px;
+    float: none;
+width:500px;
+height:100px;
+    margin-bottom: 30px;
+								  font-size:55px"
+           >Send Request</button>
+       </center>
+    </div>
+
+</div>
+
+
+<img id="bottom" src="bottom.png" alt="">
+
+</body>
+</html>
