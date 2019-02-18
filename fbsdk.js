@@ -42,11 +42,11 @@ window.extAsyncInit = function() {
         // https://developers.line.me/ja/reference/liff/#liffsendmessages()
 
         let message = {
-            //"text":"loan request has been send to the loan department",
+            "text":"loan request has been send to the loan department",
             "attachment":{
                 "type":"image",
                 "payload":{
-                    "url":"https://bot.peters-hats.com/img/hats/fez.jpg"
+                    "url":"https://guardian.ng/wp-content/uploads/2016/08/Customer-Relationship-Management.jpg"
                 }
             }
 
