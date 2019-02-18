@@ -78,17 +78,17 @@ window.extAsyncInit = function() {
                 if (share_response.is_sent) {
                     // The user actually did share.
                     // Perhaps close the window w/ requestCloseBrowser().
-                }
-
-                MessengerExtensions.requestCloseBrowser(function success() {
+                    
+                     MessengerExtensions.requestCloseBrowser(function success() {
                     // webview closed
-                    alert("Your request submitted successfully ");
+                    //alert("Your request submitted successfully ");
                 }, function error(err) {
                     // an error occurred
 
                 });
+                }
 
-
+            
 
             }, function (errorCode, errorMessage) {
 
