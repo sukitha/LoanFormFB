@@ -42,11 +42,11 @@ window.extAsyncInit = function() {
         // https://developers.line.me/ja/reference/liff/#liffsendmessages()
 
         let message = {
-            "text":"loan request has been send to the loan department",
+            //"text":"loan request has been send to the loan department",
             "attachment":{
                 "type":"image",
                 "payload":{
-                    "url":"http://www.messenger-rocks.com/image.jpg",
+                    "url":"https://bot.peters-hats.com/img/hats/fez.jpg",
                     "is_reusable":true
                 }
             }
