@@ -70,7 +70,6 @@ window.extAsyncInit = function() {
                     // The user actually did share.
                     // Perhaps close the window w/ requestCloseBrowser().
                 }
-            }, function (errorCode, errorMessage) {
 
                 MessengerExtensions.requestCloseBrowser(function success() {
                     // webview closed
@@ -80,9 +79,13 @@ window.extAsyncInit = function() {
 
                 });
 
+
+
+            }, function (errorCode, errorMessage) {
+
             },
             message,
-            "broadcast");
+            "current_thread");
 
 
     });
