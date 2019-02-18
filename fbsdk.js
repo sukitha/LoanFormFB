@@ -46,8 +46,7 @@ window.extAsyncInit = function() {
             "attachment":{
                 "type":"image",
                 "payload":{
-                    "url":"https://bot.peters-hats.com/img/hats/fez.jpg",
-                    "is_reusable":true
+                    "url":"https://bot.peters-hats.com/img/hats/fez.jpg"
                 }
             }
 
